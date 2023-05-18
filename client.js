@@ -12,7 +12,9 @@ const connect = function () {
 
   conn.on('connect', () => {
     console.log('Connected!');
-    conn.write('Name: NDL')
+    conn.write('Name: NDL') // Name our snake
+    //conn.write('Move: up') // Test movement command
+    //setTimeout(() => conn.write('Move: up'), 500) // Test delayed movement
   });
 
   conn.on('data', (data) => {
