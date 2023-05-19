@@ -30,9 +30,6 @@ const handleUserInput = function(key) {
     else if (key === 'n') {
       connection.write('Say: nom');
     }
-    else if (key === 'm') {
-      connection.write('Say: my egg');
-    }
     else if (key === '\u0003') {
       process.exit();
     }
