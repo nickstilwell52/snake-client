@@ -14,7 +14,7 @@ const connect = function () {
 
   conn.on('connect', () => {
     console.log('Connected!');
-    conn.write('Name: NDL') // Name our snake
+    conn.write('Name: NDL') // Name our noodle
   });
 
   conn.on('data', (data) => {
